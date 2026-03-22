@@ -13,6 +13,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
+- [Deployment](#deployment)
 - [Author](#author)
 
 ## Overview
@@ -28,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/hakod437/social-links-profile-solution)
-- Live Site URL: [Deploy on Vercel](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://hakod437.github.io/social-links-profile-solution/)
 
 ## My process
 
@@ -40,6 +41,7 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Vite](https://vitejs.dev/) - Build tool & development server
+- [gh-pages](https://www.npmjs.com/package/gh-pages) - Deployment to GitHub Pages
 - Inter font family (custom @font-face)
 
 ### What I learned
@@ -96,9 +98,10 @@ Focus areas for future enhancement:
 
 ### AI Collaboration
 
-This project utilized Claude (GitHub Copilot) for:
+This project used GitHub Copilot for:
 
 - **Project Setup:** Scaffolding React + Vite structure with proper dependencies
+- **Deployment Setup:** Configuring Vite base path and GitHub Pages scripts
 - **Git Configuration:** Setting up multi-account SSH management for seamless GitHub workflow
 - **Code Review:** Ensuring clean, semantic HTML and maintainable CSS
 
@@ -110,6 +113,20 @@ This project utilized Claude (GitHub Copilot) for:
 **What I improved:**
 - Final manual tweaks for pixel-perfect alignment
 - Custom responsive breakpoints based on actual mobile dimensions
+
+## Deployment
+
+This project is deployed on GitHub Pages.
+
+```bash
+# Build and publish to gh-pages branch
+npm run deploy
+```
+
+Notes:
+
+- Vite base path is configured for repository deployment.
+- The image source uses `import.meta.env.BASE_URL` to work correctly on GitHub Pages.
 
 ## Author
 
@@ -130,6 +147,9 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
 ```
 
 The app will be available at `http://localhost:5173/`

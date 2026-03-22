@@ -1,11 +1,13 @@
 import './App.css'
 
 function App() {
+  const avatarSrc = `${import.meta.env.BASE_URL}assets/images/avatar-jessica.jpeg`
+
   return (
     <div className="App">
       <div className="parent-div">
         <div className="child-div child-div--image">
-          <img className="profile-image" src="/assets/images/avatar-jessica.jpeg" alt="Jessica Randall" />
+          <img className="profile-image" src={avatarSrc} alt="Jessica Randall" />
         </div>
         <div className="child-div name-location">
           <span className="name">Jessica Randall</span>
